@@ -4,13 +4,13 @@
 %global crate album-creator
 
 Name:           rust-album-creator
-Version:        0.1.5
+Version:        0.1.6
 Release:        %autorelease
 Summary:        Tool to batch process images
 
 License:        MIT
 URL:            https://crates.io/crates/album-creator
-Source:         %{crates_source}
+Source:         %{crate}-%{version}.tar
 
 #ExclusiveArch:  %{rust_arches}
 
