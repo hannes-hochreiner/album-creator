@@ -4,7 +4,7 @@
 %global crate album-creator
 
 Name:           rust-album-creator
-Version:        0.1.0
+Version:        0.1.1
 Release:        %autorelease
 Summary:        Tool to batch process images
 
