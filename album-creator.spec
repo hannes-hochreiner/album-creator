@@ -4,7 +4,7 @@
 %global crate album-creator
 
 Name:           rust-album-creator
-Version:        0.1.3
+Version:        0.1.4
 Release:        %autorelease
 Summary:        Tool to batch process images
 
@@ -15,6 +15,7 @@ Source:         %{crates_source}
 #ExclusiveArch:  %{rust_arches}
 
 BuildRequires:  rust-packaging >= 21
+BuildRequires:  glibc-langpack-en
 
 %global _description %{expand:
 Tool to batch process images.}
