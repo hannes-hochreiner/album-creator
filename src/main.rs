@@ -18,6 +18,7 @@ enum Transformation {
     Normalize,
     Enhance,
     Unsharp { radius: u32 },
+    Rotate { degrees: i32 },
 }
 
 #[derive(Debug, Deserialize, PartialEq)]
@@ -84,6 +85,9 @@ fn main() -> Result<()> {
                     }
                     Transformation::Unsharp { radius } => {
                         com.arg("-unsharp").arg(format!("{}", radius))
+                    }
+                    Transformation::Rotate { degrees } => {
+                        com.arg("-rotate").arg(format!("{}", degrees))
                     }
                 };
             }
